@@ -3,6 +3,7 @@
 import { MdOutlineDarkMode } from "react-icons/md";
 import { MdOutlineLightMode } from "react-icons/md";
 import { CgMenu } from "react-icons/cg";
+import { IoClose } from "react-icons/io5";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -25,7 +26,7 @@ const Header = () => {
   }, [theme]);
 
   return (
-    <header className="flex justify-between items-center py-3 px-10 text-white backdrop-blur-3xl sticky top-0">
+    <header className="flex justify-around gap-5 px-6 py-3 border text-white backdrop-blur-3xl sticky top-0 max-md:justify-between">
       {/* Logo inshallah */}
       <div />
       <nav className="flex gap-10 py-2.5 px-7 max-md:hidden">
@@ -67,7 +68,7 @@ const Header = () => {
           }}
           className="w-10 h-10 flex justify-center items-center rounded-full bg-blue-400 hover:bg-blue-300 transition-colors"
         >
-          {theme === "dark" ? (
+          {theme === "light" ? (
             <MdOutlineDarkMode className="text-lg"></MdOutlineDarkMode>
           ) : (
             <MdOutlineLightMode className="text-lg"></MdOutlineLightMode>
@@ -78,20 +79,22 @@ const Header = () => {
       {/* the menu on the small  screen */}
 
       {showMenu && (
-        <div className="fixed bg-[#282830e6] inset-0 z-50 backdrop-blur-sm">
-          <div className="w-4/5 mt-8 mx-auto bg-secondary rounded-2xl py-4 px-8 animate-popup">
+        <div className="fixed text-black dark:text-white bg-[#282830e6] inset-0 z-50 backdrop-blur-sm">
+          <div className="w-4/5 mt-8 mx-auto bg-[#ffffff] dark:bg-[#18181b] rounded-2xl py-4 px-8 animate-popup">
             <div className="text-right py-2">
               <button
-                className="icon-close text-[25px] hover:rotate-180 hover:text-red-500"
+                className="text-[25px] hover:rotate-180 hover:text-red-500 transition-transform duration-300"
                 onClick={() => {
                   setShowMenu(false);
                 }}
-              />
+              >
+                <IoClose className="text-[25px] hover:rotate-180 hover:text-red-500" />
+              </button>
             </div>
-            <div className="flex flex-col divide-y divide-border">
+            <div className="flex flex-col divide-y divide-[#cacaca84] dark:divide-[#3f3f4666]">
               <Link
+                href="/about"
                 className="py-4"
-                href="hero"
                 onClick={() => {
                   setShowMenu(false);
                 }}
@@ -99,8 +102,8 @@ const Header = () => {
                 About
               </Link>
               <Link
+                href="/skills"
                 className="py-4"
-                href="skills"
                 onClick={() => {
                   setShowMenu(false);
                 }}
@@ -108,8 +111,8 @@ const Header = () => {
                 Skills
               </Link>
               <Link
+                href="/works"
                 className="py-4"
-                to="works"
                 onClick={() => {
                   setShowMenu(false);
                 }}
@@ -117,13 +120,13 @@ const Header = () => {
                 Works
               </Link>
               <Link
+                href="/tags"
                 className="py-4"
-                href="contact"
                 onClick={() => {
                   setShowMenu(false);
                 }}
               >
-                <span className="icon-envelope text-base"></span>Contact
+                Tags
               </Link>
             </div>
           </div>
