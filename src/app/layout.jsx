@@ -1,4 +1,4 @@
-import Header from "./components/Header";
+import Header from "./hooks/header";
 import "./globals.css";
 import { GeistSans } from "geist/font/sans";
 

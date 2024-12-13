@@ -12,9 +12,12 @@ const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   // set the theme
-  const [theme, setTheme] = useState(
-    localStorage.getItem("currentMode") ?? "dark"
-  );
+  const [theme, setTheme] = useState("dark");
+
+  useEffect(() => {
+    const currentMode = localStorage.getItem("currentMode") ?? "dark";
+    setTheme(currentMode);
+  }, []);
   useEffect(() => {
     if (theme === "light") {
       document.body.classList.remove("dark");
@@ -26,7 +29,7 @@ const Header = () => {
   }, [theme]);
 
   return (
-    <header className="flex justify-around gap-5 px-6 py-3 border text-white backdrop-blur-3xl sticky top-0 max-md:justify-between">
+    <header className="flex justify-around gap-5 px-6 py-3 text-white backdrop-blur-3xl sticky top-0 max-md:justify-between">
       {/* Logo inshallah */}
       <div />
       <nav className="flex gap-10 py-2.5 px-7 max-md:hidden">
@@ -44,7 +47,7 @@ const Header = () => {
         </Link>
       </nav>
       <div className="flex items-center gap-3">
-        <button className="bg-blue-400 px-10 py-2 rounded-full  font-semibold hover:bg-blue-300 transition-colors max-md:hidden">
+        <button className="bg-white/25 px-10 py-2 rounded-full  font-semibold hover:bg-white/50 transition-colors max-md:hidden">
           <Link href="/contact">Contact</Link>
         </button>
         <button
@@ -58,15 +61,11 @@ const Header = () => {
         <button
           onClick={() => {
             // send value to ls
-            localStorage.setItem(
-              "currentMode",
-              theme === "dark" ? "light" : "dark"
-            );
-
-            // get value from ls
-            setTheme(localStorage.getItem("currentMode"));
+            const newTheme = theme === "dark" ? "light" : "dark";
+            localStorage.setItem("currentMode", newTheme);
+            setTheme(newTheme);
           }}
-          className="w-10 h-10 flex justify-center items-center rounded-full bg-blue-400 hover:bg-blue-300 transition-colors"
+          className="w-10 h-10 flex justify-center items-center rounded-full bg-white/25 hover:bg-white/50 transition-colors"
         >
           {theme === "light" ? (
             <MdOutlineDarkMode className="text-lg"></MdOutlineDarkMode>
@@ -80,7 +79,7 @@ const Header = () => {
 
       {showMenu && (
         <div className="fixed text-black dark:text-white bg-[#282830e6] inset-0 z-50 backdrop-blur-sm">
-          <div className="w-4/5 mt-8 mx-auto bg-[#ffffff] dark:bg-[#18181b] rounded-2xl py-4 px-8 animate-popup">
+          <div className="w-4/5 mx-auto bg-[#ffffff] dark:bg-[#18181b] rounded-2xl py-4 px-8 animate-popup">
             <div className="text-right py-2">
               <button
                 className="text-[25px] hover:rotate-180 hover:text-red-500 transition-transform duration-300"
