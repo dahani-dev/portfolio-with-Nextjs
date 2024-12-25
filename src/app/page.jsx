@@ -1,3 +1,4 @@
+import Contai from "./components/contai";
 import Hero from "./components/hero";
 import Main from "./components/main";
 
@@ -6,6 +7,7 @@ const Home = () => {
     <main>
       <Hero />
       <Main />
+      <Contai />
     </main>
   );
 };
