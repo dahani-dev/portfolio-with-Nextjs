@@ -9,7 +9,7 @@ scrollbar
 */
 
 body {
-    --sb-track-color: #232e33;
+    --sb-track-color: #242333;
     --sb-thumb-color: #d4d4d8;
     --sb-size: 14px;
   }

@@ -13,7 +13,7 @@ const linearGradient = `bg-gradient-to-r from-cyan-500 to-blue-500 h-screen`;
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${GeistSans.className} ${linearGradient} h-[300vh]`}>
+      <body className={`${GeistSans.className} ${linearGradient}`}>
         <Header />
         {children}
       </body>

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <section className="px-10 py-36">
+    <section className="py-44 px-80 max-2xl:px-10 bg-gradient-to-r from-cyan-500 to-blue-500">
       <h1 className="text-5xl text-white font-semibold tracking-wide mb-5">
         I’m Mohamed Dahani
       </h1>

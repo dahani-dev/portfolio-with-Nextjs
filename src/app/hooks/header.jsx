@@ -29,7 +29,7 @@ const Header = () => {
   }, [theme]);
 
   return (
-    <header className="flex justify-around gap-5 px-6 py-3 text-white backdrop-blur-3xl sticky top-0 max-md:justify-between">
+    <header className="flex justify-around gap-5 px-6 py-3 text-white bg-black/20 backdrop-blur-md sticky top-0 max-md:justify-between z-50">
       {/* Logo inshallah */}
       <div />
       <nav className="flex gap-10 py-2.5 px-7 max-md:hidden">
