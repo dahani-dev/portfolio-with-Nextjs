@@ -6,11 +6,11 @@ import { IoLogoGithub } from "react-icons/io";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import Works from "./works";
-// import { FaInstagram } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
 
 const main = () => {
   return (
-    <main className=" bg-white dark:bg-[#18181B]">
+    <main className=" bg-white dark:bg-[#18181B] px-10">
       <div className="container mx-auto w-full flex justify-between gap-8 max-lg:flex-wrap relative top-[-100px]">
         <div className="backdrop-blur-md dark:bg-white/15 bg-black/10 py-9 px-10 rounded-2xl min-w-[60%] shadow-xl">
           <h1 className="text-white font-semibold text-2xl mb-7">Services</h1>
@@ -127,7 +127,7 @@ const main = () => {
                 </button>
               </div>
             </div>
-            {/* <div className="flex-grow flex justify-between items-center  gap-8 py-4 px-5 bg-white rounded-xl dark:bg-[#18181B]">
+            <div className="flex-grow flex justify-between items-center  gap-8 py-4 px-5 bg-white rounded-xl dark:bg-[#18181B]">
               <div>
                 <h1 className="text-black font-semibold text-lg mb-6 dark:text-white flex items-center">
                   <FaInstagram />
@@ -145,7 +145,7 @@ const main = () => {
                   </Link>
                 </button>
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
       </div>
