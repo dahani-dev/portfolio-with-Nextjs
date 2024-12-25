@@ -7,7 +7,7 @@ const Hero = () => {
         I’m Mohamed Dahani
       </h1>
       <p className=" text-white font-medium text-lg tracking-wide max-w-2xl leading-8 mb-10">
-        Also known as <span className="underline">BrunoX</span>. a passionate
+        Also known as <span className="underline">BrunoX</span>. A passionate
         web developer with two years of experience in creating and implementing
         innovative web solutions. Skilled in programming, troubleshooting, and
         collaborating with cross-functional teams to achieve the success of
