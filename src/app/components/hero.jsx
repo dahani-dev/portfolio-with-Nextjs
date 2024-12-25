@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <section className="py-44 px-10 container mx-auto">
+    <section className="py-44 px-8 container mx-auto">
       <h1 className="text-5xl text-white font-semibold tracking-wide mb-5">
         I’m Mohamed Dahani
       </h1>
