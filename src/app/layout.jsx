@@ -1,6 +1,7 @@
 import Header from "./hooks/header";
 import "./globals.css";
 import { GeistSans } from "geist/font/sans";
+import Footer from "./components/footer";
 
 export const metadata = {
   title: "Mohamed Dahani",
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
       <body className={`${GeistSans.className} ${linearGradient}`}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
