@@ -10,7 +10,7 @@ import { FaInstagram } from "react-icons/fa6";
 
 const main = () => {
   return (
-    <main className=" bg-[#f1f4f9] dark:bg-[#18181B] px-8">
+    <main className=" bg-[#f1f4f9] dark:bg-[#18181B] px-8 pb-14">
       <div className="container mx-auto w-full flex justify-between gap-8 max-lg:flex-wrap relative top-[-100px]">
         <div className="backdrop-blur-md dark:bg-white/15 bg-black/10 py-9 px-10 rounded-2xl min-w-[60%] shadow-xl">
           <h1 className="text-white font-semibold text-2xl mb-7">Services</h1>
