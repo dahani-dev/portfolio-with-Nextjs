@@ -25,11 +25,12 @@ const main = () => {
                 </button>
               </div>
 
-              <button className="flex justify-center items-center text-black bg-white text-2xl rounded-lg dark:bg-[#3F3F46] dark:text-white shadow-xl p-5 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white transition-colors">
-                <Link href="">
-                  <FaCode />
-                </Link>
-              </button>
+              <Link
+                href=""
+                className="flex justify-center items-center text-black bg-white text-2xl rounded-lg dark:bg-[#3F3F46] dark:text-white shadow-xl p-5 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white transition-colors"
+              >
+                <FaCode />
+              </Link>
             </div>
             <div className="flex-grow flex justify-between items-center gap-8 py-4 px-5 bg-white rounded-xl dark:bg-[#18181B] ">
               <div>
@@ -41,11 +42,12 @@ const main = () => {
                 </button>
               </div>
 
-              <button className="flex justify-center items-center text-black bg-white text-2xl rounded-lg dark:bg-[#3F3F46] dark:text-white shadow-xl p-5 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white transition-colors">
-                <Link href="">
-                  <FaDatabase />
-                </Link>
-              </button>
+              <Link
+                href=""
+                className="flex justify-center items-center text-black bg-white text-2xl rounded-lg dark:bg-[#3F3F46] dark:text-white shadow-xl p-5 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white transition-colors"
+              >
+                <FaDatabase />
+              </Link>
             </div>
             <div className="flex-grow flex justify-between items-center gap-8 py-4 px-5 bg-white rounded-xl dark:bg-[#18181B] ">
               <div>
@@ -56,12 +58,12 @@ const main = () => {
                   <Link href="">Discover more</Link>
                 </button>
               </div>
-
-              <button className="flex justify-center items-center text-black bg-white text-2xl rounded-lg dark:bg-[#3F3F46] dark:text-white shadow-xl p-5 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white transition-colors">
-                <Link href="">
-                  <CiMobile3 />
-                </Link>
-              </button>
+              <Link
+                href=""
+                className="flex justify-center items-center text-black bg-white text-2xl rounded-lg dark:bg-[#3F3F46] dark:text-white shadow-xl p-5 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white transition-colors"
+              >
+                <CiMobile3 />
+              </Link>
             </div>
           </div>
         </div>
@@ -82,11 +84,12 @@ const main = () => {
               </div>
 
               <div>
-                <button className=" flex justify-center items-center text-black bg-white text-2xl rounded-lg dark:bg-[#3F3F46] dark:text-white shadow-xl p-5 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white transition-colors">
-                  <Link href="">
-                    <IoLogoGithub />
-                  </Link>
-                </button>
+                <Link
+                  href=""
+                  className=" flex justify-center items-center text-black bg-white text-2xl rounded-lg dark:bg-[#3F3F46] dark:text-white shadow-xl p-5 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white transition-colors"
+                >
+                  <IoLogoGithub />
+                </Link>
               </div>
             </div>
             <div className="flex-grow flex justify-between items-center  gap-8 py-4 px-5 bg-white rounded-xl dark:bg-[#18181B]">
@@ -101,11 +104,12 @@ const main = () => {
               </div>
 
               <div>
-                <button className=" flex justify-center items-center text-black bg-white text-2xl rounded-lg dark:bg-[#3F3F46] dark:text-white shadow-xl p-5 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white transition-colors">
-                  <Link href="">
-                    <FaLinkedin />
-                  </Link>
-                </button>
+                <Link
+                  href=""
+                  className=" flex justify-center items-center text-black bg-white text-2xl rounded-lg dark:bg-[#3F3F46] dark:text-white shadow-xl p-5 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white transition-colors"
+                >
+                  <FaLinkedin />
+                </Link>
               </div>
             </div>
             <div className="flex-grow flex justify-between items-center  gap-8 py-4 px-5 bg-white rounded-xl dark:bg-[#18181B]">
@@ -120,11 +124,12 @@ const main = () => {
               </div>
 
               <div>
-                <button className=" flex justify-center items-center text-black bg-white text-2xl rounded-lg dark:bg-[#3F3F46] dark:text-white shadow-xl p-5 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white transition-colors">
-                  <Link href="">
-                    <FaXTwitter />
-                  </Link>
-                </button>
+                <Link
+                  href=""
+                  className=" flex justify-center items-center text-black bg-white text-2xl rounded-lg dark:bg-[#3F3F46] dark:text-white shadow-xl p-5 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white transition-colors"
+                >
+                  <FaXTwitter />
+                </Link>
               </div>
             </div>
             <div className="flex-grow flex justify-between items-center  gap-8 py-4 px-5 bg-white rounded-xl dark:bg-[#18181B]">
@@ -139,11 +144,12 @@ const main = () => {
               </div>
 
               <div>
-                <button className=" flex justify-center items-center text-black bg-white text-2xl rounded-lg dark:bg-[#3F3F46] dark:text-white shadow-xl p-5 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white transition-colors">
-                  <Link href="">
-                    <FaInstagram />
-                  </Link>
-                </button>
+                <Link
+                  href=""
+                  className=" flex justify-center items-center text-black bg-white text-2xl rounded-lg dark:bg-[#3F3F46] dark:text-white shadow-xl p-5 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white transition-colors"
+                >
+                  <FaInstagram />
+                </Link>
               </div>
             </div>
           </div>
