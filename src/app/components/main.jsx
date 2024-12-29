@@ -5,7 +5,7 @@ import { FaDatabase } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
-import Works from "./works";
+import Works from "./mainWorks";
 import { FaInstagram } from "react-icons/fa6";
 
 const main = () => {
