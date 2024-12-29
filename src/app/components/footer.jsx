@@ -48,25 +48,25 @@ const Footer = () => {
         <div>
           <nav className="flex gap-10 text-lg text-black dark:text-white">
             <Link
-              className="cursor-pointer hover:text-red-500 transition-colors"
+              className="cursor-pointer hover:text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500 transition-colors"
               href="/about"
             >
               About
             </Link>
             <Link
-              className="cursor-pointer hover:text-red-500 transition-colors"
+              className="cursor-pointer hover:text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500 transition-colors"
               href="/skills"
             >
               Skills
             </Link>
             <Link
-              className="cursor-pointer hover:text-red-500 transition-colors"
+              className="cursor-pointer hover:text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500 transition-colors"
               href="/works"
             >
               Works
             </Link>
             <Link
-              className="cursor-pointer hover:text-red-500 transition-colors"
+              className="cursor-pointer hover:text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500 transition-colors"
               href="/contact"
             >
               Tags
