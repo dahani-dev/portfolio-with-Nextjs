@@ -6,7 +6,9 @@ const Works = () => {
   return (
     <div className="mx-auto">
       <section className="container mx-auto py-40">
-        <h1 className="mr-4 text-5xl font-semibold text-white max-md:pl-6">Works</h1>
+        <h1 className="mr-4 text-5xl font-semibold text-white max-md:pl-6">
+          Works
+        </h1>
       </section>
       <section className="bg-[#f1f4f9] dark:bg-[#18181a] py-20">
         <div className="container mx-auto">
@@ -39,7 +41,11 @@ const Works = () => {
                     </div>
                     <div className="h-20 bg-slate-300 backdrop-blur-md dark:bg-white/5 flex justify-center items-center">
                       <button className="text-white bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 py-2 px-14 font-bold rounded-full hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-500 transition-colors">
-                        <Link href={item.link} target="_blank">
+                        <Link
+                          href={item.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           Visit
                         </Link>
                       </button>
