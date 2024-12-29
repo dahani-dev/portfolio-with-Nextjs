@@ -26,7 +26,7 @@ const Works = () => {
                         src={item.img}
                         layout="fill"
                         objectFit="cover"
-                        objectPosition="left top"
+                        objectPosition="center"
                         loading="lazy"
                         decoding="async"
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
