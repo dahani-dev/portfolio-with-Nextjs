@@ -21,12 +21,12 @@ const main = () => {
                   Front-end dev
                 </h1>
                 <button className="text-white bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 py-2 px-5 font-bold rounded-full hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-500 transition-colors">
-                  <Link href="">Discover more</Link>
+                  <Link href="/service/frontend">Discover more</Link>
                 </button>
               </div>
 
               <Link
-                href=""
+                href="/service/frontend"
                 className="flex justify-center items-center text-black bg-white text-2xl rounded-lg dark:bg-[#3F3F46] dark:text-white shadow-xl p-5 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white transition-colors"
               >
                 <FaCode />
@@ -38,12 +38,12 @@ const main = () => {
                   Back-end dev
                 </h1>
                 <button className="text-white bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 py-2 px-5 font-bold rounded-full hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-500 transition-colors">
-                  <Link href="">Discover more</Link>
+                  <Link href="/service/backend">Discover more</Link>
                 </button>
               </div>
 
               <Link
-                href=""
+                href="/service/backend"
                 className="flex justify-center items-center text-black bg-white text-2xl rounded-lg dark:bg-[#3F3F46] dark:text-white shadow-xl p-5 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white transition-colors"
               >
                 <FaDatabase />
@@ -55,11 +55,11 @@ const main = () => {
                   Mobile development
                 </h1>
                 <button className="text-white bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 py-2 px-5 font-bold rounded-full hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-500 transition-colors">
-                  <Link href="">Discover more</Link>
+                  <Link href="/service/mobile">Discover more</Link>
                 </button>
               </div>
               <Link
-                href=""
+                href="/service/mobile"
                 className="flex justify-center items-center text-black bg-white text-2xl rounded-lg dark:bg-[#3F3F46] dark:text-white shadow-xl p-5 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white transition-colors"
               >
                 <CiMobile3 />
