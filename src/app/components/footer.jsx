@@ -21,24 +21,28 @@ const Footer = () => {
           <div className="flex gap-5">
             <Link
               href={"/"}
+              aria-label="My github account"
               className="text-black dark:text-white text-2xl h-9 w-9 flex justify-center items-center hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black rounded-full transition-colors"
             >
               <IoLogoGithub />
             </Link>
             <Link
               href={"/"}
+              aria-label="My linkedin account"
               className="text-black dark:text-white text-2xl h-9 w-9 flex justify-center items-center hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black rounded-full transition-colors"
             >
               <FaLinkedin />
             </Link>
             <Link
               href={"/"}
+              aria-label="My x twitter account"
               className="text-black dark:text-white text-2xl h-9 w-9 flex justify-center items-center hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black rounded-full transition-colors"
             >
               <FaXTwitter />
             </Link>
             <Link
               href={"/"}
+              aria-label="My instagram account"
               className="text-black dark:text-white text-2xl h-9 w-9 flex justify-center items-center hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black rounded-full transition-colors"
             >
               <FaInstagram />
