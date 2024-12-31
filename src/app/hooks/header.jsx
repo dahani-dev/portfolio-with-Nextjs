@@ -63,6 +63,7 @@ const Header = () => {
           </button>
           <button
             className="md:hidden max-md: flex justify-center items-center w-10 h-10 bg-blue-400 rounded-full"
+            aria-label="Menu"
             onClick={() => {
               setShowMenu(true);
             }}
@@ -77,6 +78,7 @@ const Header = () => {
               setTheme(newTheme);
             }}
             className="w-10 h-10 flex justify-center items-center rounded-full bg-white/25 hover:bg-white/50 transition-colors"
+            aria-label="Theme"
           >
             {theme === "light" ? (
               <MdOutlineDarkMode className="text-lg"></MdOutlineDarkMode>
