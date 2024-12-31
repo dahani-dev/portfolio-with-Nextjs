@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import meImg from "../../../public/me.png";
+import meImg from "../../../public/me/me_circle.png";
 import { IoLogoGithub } from "react-icons/io";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";

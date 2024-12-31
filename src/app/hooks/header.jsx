@@ -5,7 +5,7 @@ import { MdOutlineLightMode } from "react-icons/md";
 import { CgMenu } from "react-icons/cg";
 import { IoClose } from "react-icons/io5";
 import Link from "next/link";
-import meImg from "../../../public/me.png";
+import meImg from "../../../public/me/me_circle.png";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 
