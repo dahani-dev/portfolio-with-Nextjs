@@ -15,10 +15,7 @@ const main = () => {
         <div className="backdrop-blur-md dark:bg-white/15 bg-black/10 py-9 px-10 rounded-2xl min-w-[60%] shadow-xl">
           <h1 className="text-white font-semibold text-2xl mb-7">Services</h1>
           <div className="flex items-center justify-between gap-5 flex-wrap">
-            <div
-              classNamaria-label="Front-end service"
-              e="flex-grow flex justify-between items-center gap-8 py-4 px-5 bg-white rounded-xl dark:bg-[#18181B] "
-            >
+            <div className="flex-grow flex justify-between items-center gap-8 py-4 px-5 bg-white rounded-xl dark:bg-[#18181B] ">
               <div>
                 <h1 className="text-black font-semibold text-lg mb-6 dark:text-white">
                   Front-end dev
@@ -27,7 +24,7 @@ const main = () => {
                   <Link href="/service/frontend">Discover more</Link>
                 </button>
               </div>
-              FaDatabase FaDatabase
+
               <Link
                 href="/service/frontend"
                 aria-label="Front-end service"
@@ -48,7 +45,6 @@ const main = () => {
 
               <Link
                 href="/service/backend"
-                aria-label="Bront-end service"
                 className="flex justify-center items-center text-black bg-white text-2xl rounded-lg dark:bg-[#3F3F46] dark:text-white shadow-xl p-5 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white transition-colors"
               >
                 <FaDatabase />
@@ -59,13 +55,12 @@ const main = () => {
                 <h1 className="text-black font-semibold text-lg mb-6 dark:text-white">
                   Mobile development
                 </h1>
-                <button classNameFront-end="text-white bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 py-2 px-5 font-bold rounded-full hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-500 transition-colors">
+                <button className="text-white bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 py-2 px-5 font-bold rounded-full hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-500 transition-colors">
                   <Link href="/service/mobile">Discover more</Link>
                 </button>
               </div>
               <Link
                 href="/service/mobile"
-                aria-label="Mobile service"
                 className="flex justify-center items-center text-black bg-white text-2xl rounded-lg dark:bg-[#3F3F46] dark:text-white shadow-xl p-5 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white transition-colors"
               >
                 <CiMobile3 />
@@ -81,7 +76,7 @@ const main = () => {
             <div className="flex-grow flex justify-between items-center  gap-8 py-4 px-5 bg-white rounded-xl dark:bg-[#18181B]">
               <div>
                 <h1 className="text-black font-semibold text-lg mb-6 dark:text-white flex items-center">
-                  <IoLogoGithub aria-label="My github account" />
+                  <IoLogoGithub />
                   <span className="mx-2">/</span>mohamed-dahani
                 </h1>
                 <button className="text-white bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 py-2 px-5 font-bold rounded-full hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-500 transition-colors">
@@ -92,7 +87,6 @@ const main = () => {
               <div>
                 <Link
                   href=""
-                  aria-label="My github account"
                   className=" flex justify-center items-center text-black bg-white text-2xl rounded-lg dark:bg-[#3F3F46] dark:text-white shadow-xl p-5 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white transition-colors"
                 >
                   <IoLogoGithub />
@@ -113,7 +107,6 @@ const main = () => {
               <div>
                 <Link
                   href=""
-                  aria-label="My linkedin account"
                   className=" flex justify-center items-center text-black bg-white text-2xl rounded-lg dark:bg-[#3F3F46] dark:text-white shadow-xl p-5 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white transition-colors"
                 >
                   <FaLinkedin />
@@ -134,7 +127,6 @@ const main = () => {
               <div>
                 <Link
                   href=""
-                  aria-label="My x twitter account"
                   className=" flex justify-center items-center text-black bg-white text-2xl rounded-lg dark:bg-[#3F3F46] dark:text-white shadow-xl p-5 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white transition-colors"
                 >
                   <FaXTwitter />
@@ -155,7 +147,6 @@ const main = () => {
               <div>
                 <Link
                   href=""
-                  aria-label="My instagram account"
                   className=" flex justify-center items-center text-black bg-white text-2xl rounded-lg dark:bg-[#3F3F46] dark:text-white shadow-xl p-5 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white transition-colors"
                 >
                   <FaInstagram />
