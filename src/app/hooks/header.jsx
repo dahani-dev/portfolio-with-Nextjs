@@ -57,8 +57,8 @@ const Header = () => {
             Tags
           </Link>
         </nav>
-        <div className="flex items-center gap-10">
-          <button className="bg-white/25 h-10 w-36 text-center rounded-full  font-semibold hover:bg-white/50 transition-colors max-md:hidden">
+        <div className="flex items-center gap-3">
+          <button className="bg-white/25 px-10 py-2 rounded-full  font-semibold hover:bg-white/50 transition-colors max-md:hidden">
             <Link href="/contact">Contact</Link>
           </button>
           <button
