@@ -45,6 +45,7 @@ const main = () => {
 
               <Link
                 href="/service/backend"
+                aria-label="Back-end service"
                 className="flex justify-center items-center text-black bg-white text-2xl rounded-lg dark:bg-[#3F3F46] dark:text-white shadow-xl p-5 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white transition-colors"
               >
                 <FaDatabase />
@@ -61,6 +62,7 @@ const main = () => {
               </div>
               <Link
                 href="/service/mobile"
+                aria-label="Mobile service"
                 className="flex justify-center items-center text-black bg-white text-2xl rounded-lg dark:bg-[#3F3F46] dark:text-white shadow-xl p-5 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white transition-colors"
               >
                 <CiMobile3 />
@@ -87,6 +89,7 @@ const main = () => {
               <div>
                 <Link
                   href=""
+                  aria-label="My github account"
                   className=" flex justify-center items-center text-black bg-white text-2xl rounded-lg dark:bg-[#3F3F46] dark:text-white shadow-xl p-5 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white transition-colors"
                 >
                   <IoLogoGithub />
@@ -107,6 +110,7 @@ const main = () => {
               <div>
                 <Link
                   href=""
+                  aria-label="My linkedin account"
                   className=" flex justify-center items-center text-black bg-white text-2xl rounded-lg dark:bg-[#3F3F46] dark:text-white shadow-xl p-5 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white transition-colors"
                 >
                   <FaLinkedin />
@@ -127,6 +131,7 @@ const main = () => {
               <div>
                 <Link
                   href=""
+                  aria-label="My x twitter account"
                   className=" flex justify-center items-center text-black bg-white text-2xl rounded-lg dark:bg-[#3F3F46] dark:text-white shadow-xl p-5 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white transition-colors"
                 >
                   <FaXTwitter />
@@ -147,6 +152,7 @@ const main = () => {
               <div>
                 <Link
                   href=""
+                  aria-label="My instagram account"
                   className=" flex justify-center items-center text-black bg-white text-2xl rounded-lg dark:bg-[#3F3F46] dark:text-white shadow-xl p-5 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white transition-colors"
                 >
                   <FaInstagram />
