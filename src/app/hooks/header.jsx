@@ -58,10 +58,9 @@ const Header = () => {
           </Link>
         </nav>
         <div className="flex items-center gap-3">
-          <button className="bg-white/25 px-12 py-4 rounded-full font-semibold hover:bg-white/50 transition-colors max-md:hidden">
+          <button className="bg-white/25 h-10 w-36 text-center rounded-full  font-semibold hover:bg-white/50 transition-colors max-md:hidden">
             <Link href="/contact">Contact</Link>
           </button>
-
           <button
             className="md:hidden max-md: flex justify-center items-center w-10 h-10 bg-blue-400 rounded-full"
             aria-label="Menu"
