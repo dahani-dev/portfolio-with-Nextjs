@@ -78,7 +78,7 @@ const main = () => {
             <div className="flex-grow flex justify-between items-center  gap-8 py-4 px-5 bg-white rounded-xl dark:bg-[#18181B]">
               <div>
                 <h1 className="text-black font-semibold text-lg mb-6 dark:text-white flex items-center">
-                  <IoLogoGithub />
+                  <IoLogoGithub aria-label="My github account" />
                   <span className="mx-2">/</span>mohamed-dahani
                 </h1>
                 <button className="text-white bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 py-2 px-5 font-bold rounded-full hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-500 transition-colors">
@@ -99,7 +99,7 @@ const main = () => {
             <div className="flex-grow flex justify-between items-center  gap-8 py-4 px-5 bg-white rounded-xl dark:bg-[#18181B]">
               <div>
                 <h1 className="text-black font-semibold text-lg mb-6 dark:text-white flex items-center">
-                  <FaLinkedin />
+                  <FaLinkedin aria-label="My linkedin account" />
                   <span className="mx-2">/</span>mohamed-dahani
                 </h1>
                 <button className="text-white bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 py-2 px-5 font-bold rounded-full hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-500 transition-colors">
@@ -120,7 +120,7 @@ const main = () => {
             <div className="flex-grow flex justify-between items-center  gap-8 py-4 px-5 bg-white rounded-xl dark:bg-[#18181B]">
               <div>
                 <h1 className="text-black font-semibold text-lg mb-6 dark:text-white flex items-center">
-                  <FaXTwitter />
+                  <FaXTwitter aria-label="My x twitter account" />
                   <span className="mx-2">/</span>mohamed-dahani
                 </h1>
                 <button className="text-white bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 py-2 px-5 font-bold rounded-full hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-500 transition-colors">
@@ -141,7 +141,7 @@ const main = () => {
             <div className="flex-grow flex justify-between items-center  gap-8 py-4 px-5 bg-white rounded-xl dark:bg-[#18181B]">
               <div>
                 <h1 className="text-black font-semibold text-lg mb-6 dark:text-white flex items-center">
-                  <FaInstagram />
+                  <FaInstagram aria-label="My instagram account" />
                   <span className="mx-2">/</span>mohamed-dahani
                 </h1>
                 <button className="text-white bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 py-2 px-5 font-bold rounded-full hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-500 transition-colors">
