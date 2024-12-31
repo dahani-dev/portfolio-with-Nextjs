@@ -30,5 +30,27 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addComponents }) {
+      addComponents({
+        ".primary-button": {
+          height: "2.5rem",
+          width: "9rem",
+          borderRadius: "1.5rem",
+          backgroundColor: "hsla(0, 0%, 100%, .2)",
+          textAlign: "center",
+          fontWeight: "600",
+          lineHeight: "2.5rem",
+          color: "rgb(255 255 255 / var(--tw-text-opacity))",
+          backdropBlur: "blur(4px)",
+          transitionProperty:
+            "color, background-color, border-color, text-decoration-color, fill, stroke",
+          transitionDuration: ".3s",
+          transitionTimingFunction: "cubic-bezier(.4,0,.2,1)",
+          animationDuration: ".3s",
+          animationTimingFunction: "cubic-bezier(.4,0,.2,1)",
+        },
+      });
+    },
+  ],
 };

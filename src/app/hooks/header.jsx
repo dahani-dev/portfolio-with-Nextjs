@@ -58,7 +58,7 @@ const Header = () => {
           </Link>
         </nav>
         <div className="flex items-center gap-10">
-          <button className="bg-white/25 h-10 w-36 rounded-full leading-10  font-semibold hover:bg-white/50 transition-colors max-md:hidden">
+          <button className="primary-button hover:bg-white/50 transition-colors max-md:hidden">
             <Link href="/contact">Contact</Link>
           </button>
           <button
