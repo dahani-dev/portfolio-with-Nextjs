@@ -58,34 +58,32 @@ const Header = () => {
           </Link>
         </nav>
         <div className="flex items-center gap-3">
-          <button className="bg-white/25 px-12 py-3 rounded-full font-semibold hover:bg-white/50 transition-colors max-md:hidden">
+          <button className="bg-white/25 px-10 py-2 rounded-full  font-semibold hover:bg-white/50 transition-colors max-md:hidden">
             <Link href="/contact">Contact</Link>
           </button>
-
           <button
-            className="md:hidden max-md: flex justify-center items-center w-12 h-12 bg-blue-400 rounded-full"
+            className="md:hidden max-md: flex justify-center items-center w-10 h-10 bg-blue-400 rounded-full"
             aria-label="Menu"
-            aria-expanded={showMenu ? "true" : "false"} // Indicating whether the menu is open or not
             onClick={() => {
-              setShowMenu(!showMenu);
+              setShowMenu(true);
             }}
           >
-            <CgMenu className="text-white" />
+            <CgMenu />
           </button>
-
           <button
             onClick={() => {
+              // send value to ls
               const newTheme = theme === "dark" ? "light" : "dark";
               localStorage.setItem("currentMode", newTheme);
               setTheme(newTheme);
             }}
-            className="w-12 h-12 flex justify-center items-center rounded-full bg-white/25 hover:bg-white/50 transition-colors"
+            className="w-10 h-10 flex justify-center items-center rounded-full bg-white/25 hover:bg-white/50 transition-colors"
             aria-label="Theme"
           >
             {theme === "light" ? (
-              <MdOutlineDarkMode className="text-lg" />
+              <MdOutlineDarkMode className="text-lg"></MdOutlineDarkMode>
             ) : (
-              <MdOutlineLightMode className="text-lg" />
+              <MdOutlineLightMode className="text-lg"></MdOutlineLightMode>
             )}
           </button>
         </div>
