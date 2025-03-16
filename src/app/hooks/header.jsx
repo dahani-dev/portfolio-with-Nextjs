@@ -44,7 +44,11 @@ const Header = () => {
         {/* Navigation - Hidden on Mobile */}
         <nav className="hidden md:flex gap-8 text-lg">
           {["About", "Skills", "Works", "Tags"].map((item) => (
-            <Link key={item} href={`/${item.toLowerCase()}`} className="hover:text-gray-300 transition">
+            <Link
+              key={item}
+              href={`/${item.toLowerCase()}`}
+              className="hover:text-gray-300 transition"
+            >
               {item}
             </Link>
           ))}
@@ -71,7 +75,11 @@ const Header = () => {
             className="w-10 h-10 flex justify-center items-center rounded-full bg-white/25 hover:bg-white/50 transition"
             aria-label="Toggle Theme"
           >
-            {theme === "light" ? <MdOutlineDarkMode size={22} /> : <MdOutlineLightMode size={22} />}
+            {theme === "light" ? (
+              <MdOutlineDarkMode size={22} />
+            ) : (
+              <MdOutlineLightMode size={22} />
+            )}
           </button>
         </div>
 

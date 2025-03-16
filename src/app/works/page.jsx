@@ -12,9 +12,14 @@ const Works = () => {
         <div className="container mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {data.map((item, index) => (
-              <div key={index} className="bg-white dark:bg-[#1e1e1e] rounded-lg shadow-lg overflow-hidden">
+              <div
+                key={index}
+                className="bg-white dark:bg-[#1e1e1e] rounded-lg shadow-lg overflow-hidden"
+              >
                 <div className="p-4">
-                  <h3 className="text-lg font-semibold text-black dark:text-white">{item.title}</h3>
+                  <h3 className="text-lg font-semibold text-black dark:text-white">
+                    {item.title}
+                  </h3>
                 </div>
                 <div className="relative w-full aspect-video">
                   <Image
@@ -28,10 +33,16 @@ const Works = () => {
                   />
                 </div>
                 <div className="bg-[#e1e8f0] dark:bg-[#303032] px-4 py-6">
-                  <p className="text-black dark:text-white text-sm">{item.description}</p>
+                  <p className="text-black dark:text-white text-sm">
+                    {item.description}
+                  </p>
                 </div>
                 <div className="flex justify-center items-center p-4">
-                  <Link href={item.link} target="_blank" rel="noopener noreferrer">
+                  <Link
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <button className="text-white bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 py-2 px-8 text-lg font-bold rounded-full hover:from-cyan-500 hover:to-blue-500 transition-all">
                       Visit
                     </button>
