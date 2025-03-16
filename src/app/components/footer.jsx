@@ -10,12 +10,12 @@ const Footer = () => {
   const date = new Date();
   let year = date.getFullYear();
   return (
-    <footer className="bg-white dark:bg-black py-20">
+    <footer className="bg-white dark:bg-black p-10">
       <div className="container mx-auto flex justify-between items-center max-lg:flex-col max-lg:gap-10">
         <div className="flex flex-col gap-8 max-lg:items-center">
           <div>
             <Link href={"/"}>
-              <Image src={meImg} alt="logo" width={100} height={100} />
+              <Image src={meImg} alt="logo" width={80} height={80} />
             </Link>
           </div>
           <div className="flex gap-5">

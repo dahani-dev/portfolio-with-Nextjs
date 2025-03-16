@@ -1,146 +1,105 @@
 "use client";
 
-import { MdOutlineDarkMode } from "react-icons/md";
-import { MdOutlineLightMode } from "react-icons/md";
+import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
 import { CgMenu } from "react-icons/cg";
 import { IoClose } from "react-icons/io5";
 import Link from "next/link";
-import meImg from "../../../public/me/me_circle.png";
-import { useEffect, useState } from "react";
 import Image from "next/image";
+import { useEffect, useState } from "react";
+import meImg from "../../../public/me/me_circle.png";
 
 const Header = () => {
-  // show menu
   const [showMenu, setShowMenu] = useState(false);
-
-  // set the theme
   const [theme, setTheme] = useState("dark");
 
+  // Load theme from localStorage on mount
   useEffect(() => {
-    const currentMode = localStorage.getItem("currentMode") ?? "dark";
-    setTheme(currentMode);
+    const savedTheme = localStorage.getItem("currentMode") ?? "dark";
+    setTheme(savedTheme);
+    document.body.classList.toggle("dark", savedTheme === "dark");
   }, []);
-  useEffect(() => {
-    if (theme === "light") {
-      document.body.classList.remove("dark");
-      document.body.classList.add("light");
-    } else {
-      document.body.classList.add("dark");
-      document.body.classList.remove("light");
-    }
-  }, [theme]);
+
+  // Update theme dynamically
+  const toggleTheme = () => {
+    const newTheme = theme === "dark" ? "light" : "dark";
+    localStorage.setItem("currentMode", newTheme);
+    setTheme(newTheme);
+    document.body.classList.toggle("dark", newTheme === "dark");
+  };
 
   return (
-    <header className="px-6 py-1 text-white bg-black/20 backdrop-blur-md sticky top-0 z-[999]">
+    <header className="px-6 py-3 text-white bg-black/20 backdrop-blur-md sticky top-0 z-[999]">
       <div className="container mx-auto flex justify-between items-center gap-5">
-        {/* Logo inshallah */}
-        <Link href={"/"}>
+        {/* Logo */}
+        <Link href="/">
           <Image
             src={meImg}
             alt="Mohamed Dahani"
-            width={80}
-            height={80}
+            width={50}
+            height={50}
             className="rounded-full"
           />
         </Link>
-        <nav className="flex gap-10 py-2.5 px-7 max-md:hidden">
-          <Link className="cursor-pointer" href="/about">
-            About
-          </Link>
-          <Link className="cursor-pointer" href="/skills">
-            Skills
-          </Link>
-          <Link className="cursor-pointer" href="/works">
-            Works
-          </Link>
-          <Link className="cursor-pointer" href="/tags">
-            Tags
-          </Link>
+
+        {/* Navigation - Hidden on Mobile */}
+        <nav className="hidden md:flex gap-8 text-lg">
+          {["About", "Skills", "Works", "Tags"].map((item) => (
+            <Link key={item} href={`/${item.toLowerCase()}`} className="hover:text-gray-300 transition">
+              {item}
+            </Link>
+          ))}
         </nav>
+
+        {/* Action Buttons */}
         <div className="flex items-center gap-3">
-          <button className="bg-white/25 px-10 py-2 rounded-full  font-semibold hover:bg-white/50 transition-colors max-md:hidden">
+          <button className="hidden md:block bg-white/25 px-6 py-2 rounded-full font-semibold hover:bg-white/50 transition">
             <Link href="/contact">Contact</Link>
           </button>
+
+          {/* Mobile Menu Toggle */}
           <button
-            className="md:hidden max-md: flex justify-center items-center w-10 h-10 bg-blue-400 rounded-full"
-            aria-label="Menu"
-            onClick={() => {
-              setShowMenu(true);
-            }}
+            className="md:hidden flex justify-center items-center w-10 h-10 bg-blue-500 rounded-full"
+            aria-label="Open Menu"
+            onClick={() => setShowMenu(true)}
           >
-            <CgMenu />
+            <CgMenu size={22} />
           </button>
+
+          {/* Theme Toggle */}
           <button
-            onClick={() => {
-              // send value to ls
-              const newTheme = theme === "dark" ? "light" : "dark";
-              localStorage.setItem("currentMode", newTheme);
-              setTheme(newTheme);
-            }}
-            className="w-10 h-10 flex justify-center items-center rounded-full bg-white/25 hover:bg-white/50 transition-colors"
-            aria-label="Theme"
+            onClick={toggleTheme}
+            className="w-10 h-10 flex justify-center items-center rounded-full bg-white/25 hover:bg-white/50 transition"
+            aria-label="Toggle Theme"
           >
-            {theme === "light" ? (
-              <MdOutlineDarkMode className="text-lg"></MdOutlineDarkMode>
-            ) : (
-              <MdOutlineLightMode className="text-lg"></MdOutlineLightMode>
-            )}
+            {theme === "light" ? <MdOutlineDarkMode size={22} /> : <MdOutlineLightMode size={22} />}
           </button>
         </div>
 
-        {/* the menu on the small  screen */}
-
+        {/* Mobile Menu Overlay */}
         {showMenu && (
-          <div className="fixed text-black dark:text-white bg-[#282830e6] inset-0 z-50 backdrop-blur-sm">
-            <div className="w-4/5 mx-auto bg-[#ffffff] dark:bg-[#18181b] rounded-2xl py-4 px-8 animate-popup">
-              <div className="text-right py-2">
+          <div className="fixed inset-0 flex items-center justify-center bg-black/80 backdrop-blur-lg z-50">
+            <div className="w-4/5 max-w-sm bg-white dark:bg-zinc-900 text-black dark:text-white rounded-2xl py-6 px-8 shadow-lg">
+              <div className="flex justify-end">
                 <button
-                  className="text-[25px] hover:rotate-180 hover:text-red-500 transition-transform duration-300"
-                  onClick={() => {
-                    setShowMenu(false);
-                  }}
+                  className="text-2xl hover:text-red-500 transition"
+                  onClick={() => setShowMenu(false)}
+                  aria-label="Close Menu"
                 >
-                  <IoClose className="text-[25px] hover:rotate-180 hover:text-red-500" />
+                  <IoClose />
                 </button>
               </div>
-              <div className="flex flex-col divide-y divide-[#cacaca84] dark:divide-[#3f3f4666]">
-                <Link
-                  href="/about"
-                  className="py-4"
-                  onClick={() => {
-                    setShowMenu(false);
-                  }}
-                >
-                  About
-                </Link>
-                <Link
-                  href="/skills"
-                  className="py-4"
-                  onClick={() => {
-                    setShowMenu(false);
-                  }}
-                >
-                  Skills
-                </Link>
-                <Link
-                  href="/works"
-                  className="py-4"
-                  onClick={() => {
-                    setShowMenu(false);
-                  }}
-                >
-                  Works
-                </Link>
-                <Link
-                  href="/tags"
-                  className="py-4"
-                  onClick={() => {
-                    setShowMenu(false);
-                  }}
-                >
-                  Tags
-                </Link>
-              </div>
+              <nav className="flex flex-col divide-y divide-gray-300 dark:divide-gray-600 mt-4">
+                {["About", "Skills", "Works", "Tags"].map((item) => (
+                  <Link
+                    key={item}
+                    href={`/${item.toLowerCase()}`}
+                    className="py-4 text-center block"
+                    onClick={() => setShowMenu(false)}
+                  >
+                    {item}
+                  </Link>
+                ))}
+              </nav>
             </div>
           </div>
         )}
