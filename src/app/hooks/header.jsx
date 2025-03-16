@@ -44,11 +44,7 @@ const Header = () => {
         {/* Navigation - Hidden on Mobile */}
         <nav className="hidden md:flex gap-8 text-lg">
           {["About", "Skills", "Works", "Tags"].map((item) => (
-            <Link
-              key={item}
-              href={`/${item.toLowerCase()}`}
-              className="hover:text-gray-300 transition"
-            >
+            <Link key={item} href={`/${item.toLowerCase()}`}>
               {item}
             </Link>
           ))}
