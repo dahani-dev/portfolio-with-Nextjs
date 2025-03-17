@@ -1,13 +1,15 @@
+import Form from "../hooks/form";
+
 /* eslint-disable react/no-unescaped-entities */
 const Contact = () => {
   return (
     <article>
-      <section className="container mx-auto py-40">
+      <section className="container mx-auto py-32 px-6">
         <h1 className="mr-4 text-5xl font-semibold text-white max-md:pl-6">
           Get in touch with me
         </h1>
       </section>
-      <section className="bg-slate-200 dark:bg-zinc-900 py-20 max-md:px-6">
+      <section className="bg-slate-200 dark:bg-zinc-900 py-20 px-6">
         <div className="container mx-auto flex items-center justify-between gap-y-40 gap-10 flex-wrap max-sm:justify-center">
           <div>
             <h1 className="leading-9 text-[#384152] dark:text-[#d1d4db] text-4xl font-semibold mb-12">
@@ -22,7 +24,7 @@ const Contact = () => {
             </p>
           </div>
           <div>
-            
+            <Form />
           </div>
         </div>
       </section>
