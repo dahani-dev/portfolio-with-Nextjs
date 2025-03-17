@@ -16,6 +16,7 @@ const Form = () => {
         <input
           type="text"
           id="fullName"
+          required
           className="rounded-md px-3 py-2 outline-none bg-slate-200 dark:bg-zinc-900 text-black dark:text-[#d1d4db] w-full"
         />
       </div>
@@ -29,6 +30,7 @@ const Form = () => {
         <input
           type="email"
           id="email"
+          required
           className="rounded-md px-3 py-2 outline-none bg-slate-200 dark:bg-zinc-900 text-black dark:text-[#d1d4db] w-full"
         />
       </div>
@@ -41,6 +43,7 @@ const Form = () => {
         </label>
         <textarea
           id="message"
+          required
           className="rounded-md px-3 py-2 outline-none h-32 bg-slate-200 dark:bg-zinc-900 text-black dark:text-[#d1d4db] w-full"
         ></textarea>
       </div>
