@@ -10,12 +10,12 @@ const Contact = () => {
         </h1>
       </section>
       <section className="bg-slate-200 dark:bg-zinc-900 py-20 px-6">
-        <div className="container mx-auto flex items-center justify-between gap-y-40 gap-10 flex-wrap max-sm:justify-center">
+        <div className="container mx-auto relative">
           <div>
-            <h1 className="leading-9 text-[#384152] dark:text-[#d1d4db] text-4xl font-semibold mb-12">
+            <h1 className="leading-9 text-black dark:text-[#d1d4db] text-4xl font-semibold mb-12">
               Let's Talk
             </h1>
-            <p className="text-xl leading-9 text-[#384152] dark:text-[#d1d4db]">
+            <p className="text-xl leading-9 text-black dark:text-[#d1d4db] max-w-[600px]">
               Feel free to reach out to connect, collaborate, or inquire about
               potential projects, partnerships, or speaking engagements. Reach
               out to discuss your ideas, requirements, or simply to say hello.
@@ -23,9 +23,7 @@ const Contact = () => {
               together.
             </p>
           </div>
-          <div>
-            <Form />
-          </div>
+          <Form />
         </div>
       </section>
     </article>
