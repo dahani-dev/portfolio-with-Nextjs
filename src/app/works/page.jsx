@@ -17,9 +17,9 @@ const Works = () => {
                 className="bg-white dark:bg-[#1e1e1e] rounded-lg shadow-lg overflow-hidden"
               >
                 <div className="p-4">
-                  <h3 className="text-lg font-semibold text-black dark:text-white">
+                  <h1 className="text-lg font-semibold text-black dark:text-white">
                     {item.title}
-                  </h3>
+                  </h1>
                 </div>
                 <div className="relative w-full aspect-video">
                   <Image

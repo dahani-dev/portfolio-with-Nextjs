@@ -14,9 +14,9 @@ const MainWorks = () => {
             <div className="flex items-center gap-5" key={index}>
               <div className="grid h-full w-full overflow-hidden rounded-md bg-slate-200 backdrop-blur-md dark:bg-white/10 shadow-lg">
                 <div className="p-4">
-                  <h3 className="text-lg font-semibold text-black dark:text-white">
+                  <h1 className="text-lg font-semibold text-black dark:text-white">
                     {item.title}
-                  </h3>
+                  </h1>
                 </div>
                 <div className="relative h-[300px] w-full">
                   <Image
