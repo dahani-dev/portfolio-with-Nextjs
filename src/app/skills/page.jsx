@@ -17,6 +17,8 @@ import {
   SiPhp,
   SiLaravel,
   SiTypescript,
+  SiC,
+  SiCplusplus,
   SiGit,
 } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
@@ -43,6 +45,8 @@ const Skills = () => {
     { icon: <SiPhp className="text-[#767bb3]" /> },
     { icon: <SiLaravel className="text-[#ff2d20]" /> },
     { icon: <SiTypescript className="text-[#007acd]" /> },
+    { icon: <SiC className="text-[#00599C]" /> },
+    { icon: <SiCplusplus className="text-[#004482]" /> },
     { icon: <TbBrandReactNative className="text-[#57c4db]" /> },
     { icon: <SiGit className="text-[#ef5032]" /> },
   ];
