@@ -57,7 +57,7 @@ const Skills = () => {
         <h1 className="text-5xl font-semibold text-white">My Skills</h1>
       </section>
 
-      <section className="bg-slate-200 dark:bg-zinc-900 py-20 px-6 flex gap-20 flex-col">
+      <section className="bg-slate-200 dark:bg-zinc-900 py-20 px-6 flex gap-24 flex-col">
         <Swiper
           modules={[Autoplay]} // Add Autoplay module
           spaceBetween={30}
