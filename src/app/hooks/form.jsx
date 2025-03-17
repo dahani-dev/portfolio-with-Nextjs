@@ -4,10 +4,13 @@ const Form = () => {
   return (
     <form
       action=""
-      className="flex flex-col gap-10 min-w-[550px] backdrop-blur-md dark:bg-white/15 bg-black/10 py-9 px-10 rounded-2xl shadow-xl absolute -top-48 right-0"
+      className="flex flex-col gap-10 min-w-[550px] backdrop-blur-md dark:bg-white/15 bg-black/10 py-9 px-10 rounded-2xl shadow-xl absolute -top-48 right-0 max-xl:relative max-xl:top-10"
     >
       <div className="flex flex-col gap-2">
-        <label htmlFor="fullName" className="text-black dark:text-white font-semi-bold">
+        <label
+          htmlFor="fullName"
+          className="text-black dark:text-white font-semi-bold"
+        >
           Your full name
         </label>
         <input
@@ -17,7 +20,10 @@ const Form = () => {
         />
       </div>
       <div className="flex flex-col gap-2">
-        <label htmlFor="email" className="text-black dark:text-white font-semi-bold">
+        <label
+          htmlFor="email"
+          className="text-black dark:text-white font-semi-bold"
+        >
           Your email
         </label>
         <input
@@ -27,7 +33,10 @@ const Form = () => {
         />
       </div>
       <div className="flex flex-col gap-2">
-        <label htmlFor="message" className="text-black dark:text-white font-semi-bold">
+        <label
+          htmlFor="message"
+          className="text-black dark:text-white font-semi-bold"
+        >
           Your message
         </label>
         <textarea

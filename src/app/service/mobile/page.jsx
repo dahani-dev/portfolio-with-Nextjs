@@ -6,7 +6,7 @@ const Mobile = () => {
   const yearsOfExperience = date.getFullYear() - 2023;
   return (
     <article>
-      <section className="container mx-auto py-40">
+      <section className="container mx-auto py-32 px-6">
         <h1 className="mr-4 text-5xl font-semibold text-white max-md:pl-6">
           Mobile development
         </h1>
