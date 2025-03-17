@@ -78,7 +78,7 @@ const Footer = () => {
           </nav>
         </div>
         <div>
-          <p className="text-[#616264]">
+          <p className="text-black dark:text-white">
             © {year} Mohamed Dahani. All Rights Reserved
           </p>
         </div>
