@@ -1,4 +1,4 @@
-import Form from "../hooks/form";
+import ContactForm from "../hooks/contactForm";
 
 /* eslint-disable react/no-unescaped-entities */
 const Contact = () => {
@@ -23,7 +23,7 @@ const Contact = () => {
               together.
             </p>
           </div>
-          <Form />
+          <ContactForm />
         </div>
       </section>
     </article>
