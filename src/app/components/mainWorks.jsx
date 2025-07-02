@@ -1,8 +1,25 @@
+"use client";
+
+import axios from "axios";
 import Image from "next/image";
 import Link from "next/link";
-import data from "../../db/data";
+import { useEffect, useState } from "react";
 
 const MainWorks = () => {
+  // data form backend
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get(`${process.env.NEXT_PUBLIC_BACKEND_SERVER}/projects`)
+      .then((response) => {
+        setData(response.data.data.reverse());
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
+
   return (
     <section className="container mx-auto">
       <h1 className="text-black dark:text-white font-semibold text-2xl mb-7">
@@ -20,11 +37,10 @@ const MainWorks = () => {
                 </div>
                 <div className="relative h-[300px] w-full">
                   <Image
-                    alt="Heron Finance"
-                    src={item.img}
-                    layout="fill"
-                    objectFit="cover"
-                    objectPosition="left top"
+                    alt={item.title}
+                    src={`${process.env.NEXT_PUBLIC_BACKEND_SERVER}/uploads/${item.image}`}
+                    fill
+                    style={{ objectFit: "cover", objectPosition: "left top" }}
                     loading="lazy"
                     decoding="async"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

@@ -1,8 +1,25 @@
+"use client";
+
+import axios from "axios";
 import Image from "next/image";
 import Link from "next/link";
-import data from "../../db/data";
+import { useEffect, useState } from "react";
 
 const Works = () => {
+  // get all projects from server backend
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get(`${process.env.NEXT_PUBLIC_BACKEND_SERVER}/projects`)
+      .then((response) => {
+        setData(response.data.data.reverse());
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
+
   return (
     <div className="mx-auto">
       <section className="container mx-auto py-20 px-6">
@@ -24,12 +41,13 @@ const Works = () => {
                 <div className="relative w-full aspect-video">
                   <Image
                     alt={item.title}
-                    src={item.img}
-                    layout="fill"
-                    objectFit="cover"
+                    src={`${process.env.NEXT_PUBLIC_BACKEND_SERVER}/uploads/${item.image}`}
+                    fill
+                    style={{ objectFit: "cover" }}
                     className="rounded-t-lg"
-                    loading="lazy"
                     decoding="async"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                    priority
                   />
                 </div>
                 <div className="bg-[#e1e8f0] dark:bg-[#303032] px-4 py-6">
